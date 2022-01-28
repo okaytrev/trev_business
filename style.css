@@ -11,13 +11,14 @@ html,body {
     left: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #0466C8;
-    width: 95%;
+    background-color: #001233;
+    width: 100%;
 }
 
 .logo {
     float: left;
     padding: 10px ;
+    padding-left: 10px;
 }
 
 .navigation a{
@@ -25,11 +26,12 @@ html,body {
     text-decoration: none;
     padding: 10px;
     color: white;
+    padding-left: 10px;
 }
 
 .navigation a:hover {
     color: #0466C8;
-    background-color: black;
+    background-color: white;
 }
 
 
@@ -49,6 +51,7 @@ html,body {
 
 .left_about {
     text-align: center;
+    margin-top: 20%;
 }
 
 .right_about {
@@ -62,7 +65,7 @@ html,body {
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     grid-gap: 10px;
     background-color: #001233;
-    
+    text-align: center;
 }
 
 .about_img {
@@ -75,13 +78,11 @@ html,body {
 }
 
 
-
 .offerings_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 10px;
     background-color: #0466C8;
-    margin-top: 4em;
     text-align: center;
 }
 

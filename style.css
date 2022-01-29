@@ -95,3 +95,36 @@ html,body {
 .offerings_page h1 {
     text-align: center;
   }
+
+.form_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.form_page {
+    background-color: #001845; 
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+form {
+    line-height: 27px;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #023E7D;
+    margin: 0 10%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.form_label, .form_input {
+    min-height: 15px;
+    border-radius: 5px;
+}
+
+.form_page h1 {
+    text-align: center;
+}

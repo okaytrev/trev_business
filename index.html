@@ -5,53 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/2e2db43215.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="menu">
         <div class="logo">
-            <a>LOGO</a>
+            <a><img src="media/logo.png" width="100px" height="100px"></a>
         </div>
         <div class="navigation">
-            <a href="#">About</a>
-            <a href="#">Offerings</a>
-            <a href="#">Resources</a>
-            <a href="#">Contact</a>
+            <a href="#mission">Mission</a>
+            <a href="#services">Services</a>
+            <a href="#">About Us</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
     <div class="home_page">
         <div class="home_grid">
             <div class="box left_about">
-                <h1>Are you ready to tackle tech?</h1>
-                <p>Technology can be overwhelming. Let us help you. With our offering of services and industry expertise we can help you become the besrt version of youre</p>
-                <p>Technology can be overwhelming. Let us help you. </p>
+                <h1>Are you ready to become a better human?</h1>
+                <p>Learn to tackle adversity, master mental tougness, and grow to become the best version of yourself.</p>
             </div>
             <div class="box right_about">
-                <img src="media/home-image.png" width="800" height="650">
+                <img src="media/mountain.png" width="1000" height="650">
             </div>
         </div>
     </div>
 
-    <div class="about_page">
+    <div id="mission" class="about_page">
         <div class="about_grid">
             <div class="about_img">
                 <img src="media/laptop.png">
             </div>
             <div class="about_text">
-                <h2>About us</h2>
-                <p>We do awesome things adsdfdsfdsf sdf sdfsd fdsf sdfdsfddsdfdsdssf sdf sdfdsfdsdfsddassddsdsdsdsdsdsdsdsds</p>
-                <p>OSDMNaskdmnasdas</p>
-                <p>OSDMNaskdmnasdas</p>
-                <p>OSDMNaskdmnasdas</p>
+                <h1>Our Mission</h1>
+                <p>At Coaching Inspired, our mission is simple. We strive to INSPIRE and TEACH, and we do it with KINDNESS.</p>
             </div>
         </div>
     </div>
 
-    <div class="offerings_page">
-        <h1>My Services</h1>
+    <div id="services" class="offerings_page">
+        <h1>Services</h1>
         <div class="offerings_grid">
             <div>
                 <i class= "fas fa-server"></i>
@@ -63,34 +59,40 @@
             </div>
             <div>
                 <i class="far fa-smile"></i>
-                <p>Tech Consulting</p>
+                <p>Health and Fitness</p>
             </div>
         </div>
     </div>
 
-    <div class="form_page">
+    <div id="contact" class="form_page">
         <h1>Contact Us</h1>
-        <div class="form_grid">
-            
+        <div class="form_grid"> 
             <form action="https://formspree.io/f/mvolkgwb" method="post">
                 <div class="form_container">
                 <label class="form_label" for="name">Name:</label> 
-                <input class="form_input" type="text" name="name" id="name" required>
+                <input class="form_input" type="text" name="name" id="name" value="Enter your name" required>
                 <br>
                 <br>
                 <label class="form_label" for="email">Email:</label>
-                <input class="form_input" type="email" name="email" id="email" required>
+                <input class="form_input" type="email" name="email" id="email" value="Enter your email" required>
                 <br>
                 <br>
                 <label class="form_label" for="message">Message:</label>
                 <br>
-                <textarea class="form_input" id="message" required rows="4" cols="40"></textarea>
+                <textarea class="form_box" id="message" required rows="4" cols="40" value="Enter your message"></textarea>
                 <br>
-                <input class="form_input" type="submit" value="Submit">
+                <input class="form_button" type="submit" value="Submit">
                 </div>
             </form>
         </div>
-        
     </div>
+
+    <footer>
+        <div class="footer">
+            <a href="#">Home</a>
+            <p>This page was created by scratch by TH.</p>
+        </div>
+
+    </footer>
 </body>
 </html>

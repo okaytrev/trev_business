@@ -4,6 +4,11 @@ html,body {
     color: white;
     font-family: 'Roboto', sans-serif;
     background-color: #0466C8;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu {
@@ -11,8 +16,9 @@ html,body {
     left: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #001233;
-    width: 100%;
+    background-color: #0466C8;
+    width: 95%;
+
 }
 
 .logo {
@@ -27,11 +33,14 @@ html,body {
     padding: 10px;
     color: white;
     padding-left: 10px;
+    margin-top: 5px;
+    
 }
 
 .navigation a:hover {
     color: #0466C8;
     background-color: white;
+    
 }
 
 
@@ -45,27 +54,40 @@ html,body {
 .box {
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  font-size: 1.5em;
 }
 
 .left_about {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .right_about {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .about_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     grid-gap: 10px;
-    background-color: #001233;
+    background-color: #023E7D;
     text-align: center;
+    margin: 5%;
+    border-radius: 15px;
+    border: 2px white solid;
+    margin-bottom: 10%;
+}
+
+.about_text {
+    margin: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about_text p {
+    font-size: 1.5em;
 }
 
 .about_img {
@@ -82,8 +104,13 @@ html,body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 10px;
-    background-color: #0466C8;
     text-align: center;
+    background-color: #33415C;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border: 2px white solid;
+    border-radius: 15px;
 }
 
 .far, .fas {
@@ -104,7 +131,7 @@ html,body {
 }
 
 .form_page {
-    background-color: #001845; 
+    background-color: #0466C8; 
     padding-bottom: 2em;
     padding-top: 1em;
 }
@@ -120,11 +147,33 @@ form {
     border: 2px solid white;
 }
 
-.form_label, .form_input {
+.form_label, .form_input, .form_box {
     min-height: 15px;
-    border-radius: 5px;
 }
 
+.form_input {
+    width: 250px;
+}
 .form_page h1 {
     text-align: center;
+}
+
+.form_container input[type="text"],.form_container input[type="email"], .form_box {
+   color: lightgray;
+   background-color: #023E7D;
+   border: 2px white solid;
+}
+
+footer {
+    margin-top: 10%;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    font-size: .75em;
 }

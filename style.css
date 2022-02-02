@@ -14,16 +14,13 @@ p {
 .menu {
     top: 0;
     left: 0;
-    width: 100%;
     overflow: hidden;
     background-color: #0466C8;
-    width: 95%;
+    width: 98%;
 }
 
 .logo {
     float: left;
-    padding: 10px ;
-    padding-left: 10px;
 }
 
 .navigation a{
@@ -36,9 +33,10 @@ p {
 }
 
 .navigation a:hover {
-    color: #0466C8;
+    color: black;
     background-color: white;
-    
+    margin-top: 3px;
+    border-radius: 5px; 
 }
 
 
@@ -49,17 +47,27 @@ p {
     background-color: #0466C8;
 }
 
+.home_page h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.home_page p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
 .box {
   color: #fff;
   border-radius: 5px;
-  font-size: 1.5em;
+
 }
 
 .left_about {
     text-align: center;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .right_about {
@@ -67,14 +75,25 @@ p {
     justify-content: center;    
 }
 
-.contact_h1 {
+.talk_btn {
     background-color: white;
-    color: #0466C8;
-    border-radius: 30px;
-    width: 60%;
-    font-size: 1.5em;
-    margin-left: 20%;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 800;
     border: 2px black solid;
+    font-size: 1.5em;
+    box-shadow: 0px 4px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.talk_btn:active {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px;
+    background-color: #0466C8;
+    color: #ffffff;
 }
 
 .about_grid {
@@ -95,7 +114,9 @@ p {
 }
 
 .about_text p {
-    font-size: 1.5em;
+    font-size: .75em;
+    line-height: 2em;
+    font-weight: 400;
 }
 
 .about_img {
@@ -119,6 +140,11 @@ p {
     margin-bottom: 5%;
     border: 2px white solid;
     border-radius: 15px;
+}
+
+.offerings_grid a {
+    text-decoration: none;
+    color: white;
 }
 
 .far, .fas {

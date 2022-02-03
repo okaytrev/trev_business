@@ -7,28 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/2e2db43215.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
     <title>Coaching Inspired</title>
 </head>
 <body>
     
     <div class="menu">
         <div class="logo">
-            <a><img src="media/logo_blue.png" width="100px" height="100px"></a>
+            <a href="./index.html"><img src="media/logo_blue.png" width="100px" height="100px"></a>
         </div>
         <div class="navigation">
             <a href="#mission">Mission</a>
-            <a href="./services/services.html">Services</a>
-            <a href="./about/about.html">About Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About Us</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
-   
+    
     <div class="home_page">
         <div class="home_grid">
             <div class="box left_about">
                 <h1>Are you ready to become a better human?</h1>
                 <p>Learn to tackle adversity, master mental tougness, and grow to become the best version of yourself.</p>
-                <a href="#contact" class="talk_btn">Let's Talk.</a>
+                <a href="#contact" class="talk_btn">Let's Talk</a>
             </div>
             <div class="box right_about">
                 <img src="media/mountain.png" width="1000" height="650">
@@ -49,7 +50,7 @@
     </div>
 
     <div id="services" class="offerings_page">
-        <h1>Services</h1>
+        <h2>Services</h2>
         <div class="offerings_grid">
             <div>
                 <a href="./services/services.html"><i class= "fas fa-server"></i></a>
@@ -67,33 +68,58 @@
     </div>
 
     <div id="contact" class="form_page">
-        <h1>Ready to inspire?</h1>
+        <h2>Let's talk!</h2>
         <div class="form_grid"> 
             <form action="https://formspree.io/f/mvolkgwb" method="post">
                 <div class="form_container">
                 <label class="form_label" for="name">Name:</label> 
-                <input class="form_input" type="text" name="name" id="name" value="Enter your name" required>
+                <input class="form_input" type="text" name="name" id="name" value="Enter your name" onfocus="this.value=''" required>
                 <br>
                 <br>
                 <label class="form_label" for="email">Email:</label>
-                <input class="form_input" type="email" name="email" id="email" value="Enter your email" required>
+                <input class="form_input" type="email" name="email" id="email" value="Enter your email" onfocus="this.value=''" required>
                 <br>
                 <br>
                 <label class="form_label" for="message">Message:</label>
                 <br>
-                <textarea class="form_box" id="message" required rows="4" cols="40" value="Enter your message"></textarea>
+                <textarea class="form_box" id="message" required rows="4" cols="40" value="Enter your message" onfocus="this.value=''"></textarea>
                 <br>
                 <input class="form_button" type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </div>
-
+    <hr>
     <footer>
-        <div class="footer">
-            <a href="#">Home</a>
-            <p>This page was coded by TH.</p>
+        
+        <div class=menu_footer>
+        
+            
+            <div class="inspire_footer">
+                <a>INSPIRATION</a>
+            </div>
+            
+            <div class="learning_footer">
+                <a>LEARNING</a>
+            </div>
+            
+            <div class="kindness_footer">
+                <a>KINDNESS</a>
+            </div>
         </div>
+        
+        
+        <div class="navigation_bot">
+            <a href="#mission">Mission</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer">
+            <p>This page was coded by scratch by TH.</p>
+        </div>
+
     </footer>
 </body>
 </html>

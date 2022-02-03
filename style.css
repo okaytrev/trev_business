@@ -6,6 +6,7 @@ html,body {
     background-color: #0466C8;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 100%;
 }
 p {
     font-family: 'Montserrat', sans-serif;
@@ -48,26 +49,37 @@ p {
 }
 
 .home_page h1 {
-    font-size: 2em;
+    font-size: 3em;
     line-height: 1.5em;
 }
 
 .home_page p {
     font-size: 1.25em;
+    font-weight: 400;
     line-height: 1.5em;
 }
 
 .box {
   color: #fff;
   border-radius: 5px;
-
+  
 }
+
+
+
+.left_about p {
+    margin-top: 2em;
+}
+
+
 
 .left_about {
     text-align: center;
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    line-height: 7em;
+    z-index: 10;
 }
 
 .right_about {
@@ -84,7 +96,7 @@ p {
     border: 2px black solid;
     font-size: 1.5em;
     box-shadow: 0px 4px;
-    padding: 5px;
+    padding: 5px 20px;
     text-decoration: none;
 }
 
@@ -153,7 +165,7 @@ p {
     margin: 5%;
 }
 
-.offerings_page h1 {
+.offerings_page h2 {
     text-align: center;
   }
 
@@ -166,8 +178,9 @@ p {
 
 .form_page {
     background-color: #0466C8; 
-    padding-bottom: 2em;
+    padding-bottom: 4em;
     padding-top: 1em;
+
 }
 
 form {
@@ -188,19 +201,14 @@ form {
 .form_input {
     width: 250px;
 }
-.form_page h1 {
+.form_page h2 {
     text-align: center;
 }
 
 .form_container input[type="text"],.form_container input[type="email"], .form_box {
-   color: lightgray;
+   color: white;
    background-color: #023E7D;
    border: 2px white solid;
-}
-
-footer {
-    margin-top: 10%;
-    text-align: center;
 }
 
 footer a {
@@ -210,4 +218,57 @@ footer a {
 
 footer p {
     font-size: .75em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.menu_footer {
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.inspire_footer,.learning_footer,.kindness_footer {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.navigation_bot {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navigation_bot a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navigation_bot a:hover {
+    color: black;
+    background-color: white;
+    margin-top: 3px;
+    border-radius: 5px; 
+    
+}
+
+.logo_bot {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .home_page h1 {
+        font-size: 2em;
+    }
 }

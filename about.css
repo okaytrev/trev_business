@@ -32,33 +32,67 @@ h1 {
 .navigation a{
     float: right;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    padding-left: 10px;
-    
+    box-shadow: 5px 5px 1px 1px black;
+    border: 1px black solid;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: #023E7D;
 }
 
 .navigation a:hover {
     color: black;
     background-color: white;
-    margin-top: 3px;
     border-radius: 5px; 
 }
 
 .bio {
     text-align: center;
     line-height: 1.5em;
+    width: 60%;
+    
 }
 
 
 .about_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
-    grid-gap: 10px;
-    background-color: #0466C8;
+    grid-gap: 30px;
     height: 600px;
-    overflow: hidden;
 }
+
+
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.main_image img {
+    box-shadow: 5px 10px 5px 5px black;
+}
+
+.bio {
+    background-color: #023E7D;
+    margin: auto;
+    box-shadow: 5px 10px 5px 5px black;
+    border: 1px black solid;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.bio p {
+    color: white;
+    margin: 0 5px;
+    line-height: 2em;
+}
+
+
 
 .menu_footer {
     width: 100%;
@@ -74,6 +108,9 @@ h1 {
 .inspire_footer,.learning_footer,.kindness_footer {
     font-size: 1.5em;
     font-weight: 900;
+    text-shadow: 1px 1px black, 
+                2px 2px black,
+                3px 3px black;
 }
 
 .navigation_bot {
@@ -85,15 +122,24 @@ h1 {
 }
 
 .navigation_bot a{
+    float: right;
     text-decoration: none;
-    color: white;
     padding: 10px;
+    color: white;
+    padding-left: 10px;
+    box-shadow: 5px 5px 1px 1px black;
+    border: 1px black solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: #023E7D;
 }
 
 .navigation_bot a:hover {
     color: black;
     background-color: white;
-    margin-top: 3px;
     border-radius: 5px; 
     
 }
@@ -102,3 +148,14 @@ footer p {
     font-size: .75em;
     text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+    .menu_footer {
+        margin-top: 25%;
+    }
+    .about_grid img {
+        width: 400px;
+        height: 300px;
+    }
+}
+

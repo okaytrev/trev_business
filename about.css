@@ -119,7 +119,7 @@ h1 {
     margin: auto 5%;
 }
 
-.fab {
+.fab, .fa-brands {
     color: white;
     padding: 1px;
     margin: auto;
@@ -186,16 +186,24 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-    .menu_footer {
-        margin-top: 15%;
+    .navigation, .navigation_bot {
+        font-size: .5em;
     }
+
+    .menu_footer {
+        font-size: .75em;
+    }
+
     .about_grid img {
         width: 400px;
         height: 300px;
     }
     .about_grid {
         margin-bottom: 35%;
+        grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+        margin-bottom: 50%;
     }
+    
 
 }
 

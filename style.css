@@ -295,11 +295,29 @@ footer p {
 }
 
 @media only screen and (max-width: 800px) {
+    .navigation, .navigation_bot {
+        font-size: .5em;
+    }
+
+    .menu_footer {
+        font-size: .75em;
+    }
+
     .home_page h1 {
         font-size: 2em;
     }
 
     .home_grid {
         margin-top: 5%;
+    }
+
+    .about_grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+
+    form {
+        margin: 0 auto;
+        width: 88%;
+
     }
 }

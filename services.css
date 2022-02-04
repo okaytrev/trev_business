@@ -186,3 +186,18 @@ footer p {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .navigation, .navigation_bot {
+        font-size: .5em;
+    }
+
+    .menu_footer {
+        font-size: .75em;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: 88%;
+
+    }
+}

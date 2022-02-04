@@ -6,6 +6,7 @@ html,body {
     background-color: #0466C8;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    text-align: center;
 }
 
 p {
@@ -92,6 +93,41 @@ h1 {
     line-height: 2em;
 }
 
+.credentials_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.aplus, .aws, .google {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 5px 5px 5px 5px black;
+    color: white;
+    text-align: center;
+}
+
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 10px;
+    margin: auto 5%;
+}
+
+.fab {
+    color: white;
+    padding: 1px;
+    margin: auto;
+    font-size: 4em;
+    text-shadow: 5px 5px black, 
+                 3px 3px black,
+                 4px 4px black;
+  }
 
 
 .menu_footer {
@@ -149,13 +185,22 @@ footer p {
     text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .menu_footer {
-        margin-top: 25%;
+        margin-top: 15%;
     }
     .about_grid img {
         width: 400px;
         height: 300px;
     }
+    .about_grid {
+        margin-bottom: 35%;
+    }
+
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+    .about_grid {
+        margin-bottom: 25%;
+    }
+}

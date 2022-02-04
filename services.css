@@ -50,8 +50,19 @@ h1 {
     border-radius: 5px; 
 }
 
-.about_services {
+.service_grid, .about_services  {
     text-align: center;
+}
+
+.service_list {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 0 auto;
+}
+
+
+
+.about_services {
     background-color: #023E7D;
     margin: 5% auto;
     width: 400px;
@@ -61,24 +72,64 @@ h1 {
 
 .service_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;   
 }
 
 .lifecoach_container, .fitness_container, .techtutor_container {
-    background-color: white;
+    background-color: #023E7D;
     height: 300px;
     margin: auto 50px;
     border-radius: 5px;
     border: 1px black solid;
     box-shadow: 5px 5px 5px 5px black;
-    color: black;
+    color: white;
+    text-align: center;
+    list-style-type: square;
+}
+
+.far, .fas {
+    font-size: 4em;
+    color: white;
+    margin: 5%;
+}
+
+.form_page {
+    background-color: #0466C8; 
+    padding-bottom: 4em;
+    padding-top: 1em;
+
+}
+
+form {
+    line-height: 27px;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #023E7D;
+    margin: 0 10%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 1px black solid;
     text-align: center;
 }
 
+.form_label, .form_input, .form_box {
+    min-height: 15px;
+}
 
+.form_input {
+    width: 250px;
+}
+.form_page h2 {
+    text-align: center;
+}
 
-
+.form_container input[type="text"],.form_container input[type="email"], .form_box {
+   color: white;
+   background-color: #023E7D;
+   border: 2px white solid;
+}
 
 .menu_footer {
     width: 100%;
@@ -134,3 +185,4 @@ footer p {
     font-size: .75em;
     text-align: center;
 }
+

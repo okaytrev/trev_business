@@ -321,3 +321,11 @@ footer p {
 
     }
 }
+
+@media only screen and (max-width: 280px) {
+
+    .about_grid, .form_grid, .home_grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
+    
+}

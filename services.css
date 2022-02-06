@@ -203,6 +203,8 @@ footer p {
     .form_box, .form_input {
         width: 17em;
     }
+
+    
 }
 
 @media only screen and (max-width: 280px) {

@@ -222,29 +222,25 @@ footer p {
 
     .bio {
         font-size: 1em;
-        width: 90%;
-    }
-
-    .trev_h2 {
-        padding-top: 10%;
+        width: 80%;
+        margin-top: 15%;
     }
 
     .navigation, .navigation_bot {
-        font-size: .35em;
-    }
-
-    .navigation a, .navigation_bot a {
-        padding: 5px;
-    }
-
-    .menu_footer {
         font-size: .5em;
     }
 
-    .form_box, .form_input {
-        width: 15em;
+    .about_services{
+        width: 350px;
+        align-items: center;
     }
-
+    .menu_footer {
+        font-size: .75em;
+    }
+    
+    .form_box, .form_input {
+        width: 17em;
+    }
     .credentials_grid {
         grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
     }
@@ -261,7 +257,6 @@ footer p {
 
     .skills_container {
         grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-        padding: 10% 0;
     }
 
     .fab, .fa-brands {

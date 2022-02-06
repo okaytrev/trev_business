@@ -315,17 +315,44 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     }
 
-    form {
-        margin: 0 auto;
-        width: 88%;
-
+    .form_box, .form_input {
+        width: 17em;
     }
 }
 
 @media only screen and (max-width: 280px) {
 
-    .about_grid, .form_grid, .home_grid {
+    .about_grid, .form_grid, .home_grid, .offerings_grid {
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     }
-    
+
+    .navigation, .navigation_bot {
+        font-size: .35em;
+    }
+
+    .navigation a, .navigation_bot a {
+        padding: 5px;
+    }
+
+    .menu_footer {
+        font-size: .5em;
+        
+    }
+
+    .home_grid {
+        margin-top: 5%;
+    }
+
+    .about_grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+
+    .form_box, .form_input {
+        width: 15em;
+    }
+
+    .about_text {
+        padding-right: 10%;
+        font-size: 1em;
+    }
 }

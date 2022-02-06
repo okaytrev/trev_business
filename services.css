@@ -191,13 +191,47 @@ footer p {
         font-size: .5em;
     }
 
+    .about_services{
+        width: 350px;
+        align-items: center;
+        margin-bottom: 20%;
+    }
     .menu_footer {
         font-size: .75em;
     }
     
-    form {
-        margin: 0 auto;
-        width: 88%;
-
+    .form_box, .form_input {
+        width: 17em;
     }
+}
+
+@media only screen and (max-width: 280px) {
+
+    .about_services{
+        width: 250px;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .service_grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .navigation, .navigation_bot {
+        font-size: .35em;
+    }
+
+    .navigation a, .navigation_bot a {
+        padding: 5px;
+    }
+
+    .menu_footer {
+        font-size: .5em;
+        
+    }
+
+    .form_box, .form_input {
+        width: 15em;
+    }
+
 }

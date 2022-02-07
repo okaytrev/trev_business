@@ -1,3 +1,4 @@
+/*global*/
 html,body {
     margin: 0;
     padding: 0;
@@ -8,10 +9,12 @@ html,body {
     scroll-behavior: smooth;
     height: 100%;
 }
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*navigation menu and logo*/
 .menu {
     top: 0;
     left: 0;
@@ -45,6 +48,7 @@ p {
     border-radius: 5px; 
 }
 
+/*home page*/
 
 .home_grid {
     display: grid;
@@ -112,6 +116,8 @@ p {
     color: #ffffff;
 }
 
+/*mission-about*/
+
 .about_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
@@ -151,6 +157,7 @@ p {
     text-align: center;
 }
 
+/*offerings and services*/
 
 .offerings_grid {
     display: grid;
@@ -181,6 +188,8 @@ p {
 .offerings_page h2 {
     text-align: center;
   }
+
+/*contact form*/
 
 .form_grid {
     display: grid;
@@ -225,6 +234,8 @@ form {
    background-color: #023E7D;
    border: 2px white solid;
 }
+
+/*Footer*/
 
 footer a {
     text-decoration: none;
@@ -294,6 +305,9 @@ footer p {
     justify-content: center;
 }
 
+/*Media views*/
+
+/*Mobile screens*/
 @media only screen and (max-width: 800px) {
     .navigation, .navigation_bot {
         font-size: .5em;
@@ -320,6 +334,7 @@ footer p {
     }
 }
 
+/*Samsung fold*/
 @media only screen and (max-width: 280px) {
 
     .about_grid, .form_grid, .home_grid, .offerings_grid {

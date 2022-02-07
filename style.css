@@ -329,8 +329,12 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     }
 
-    .form_box, .form_input {
+    .form_box {
         width: 17em;
+    }
+
+    .form_input {
+        width: 13em;
     }
 }
 

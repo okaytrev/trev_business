@@ -1,5 +1,4 @@
 /*global*/
-
 html,body {
     margin: 0;
     padding: 0;
@@ -19,6 +18,8 @@ p {
 h1 {
     margin-left: 1%;
 }
+
+
 
 /*navigation*/
 
@@ -105,7 +106,7 @@ h1 {
     margin-bottom: 5%;
     margin-top: 3%;
 }
-.aplus, .aws, .google, .boston {
+.lifecoach,.aplus, .aws, .google, .boston {
     background-color: white;
     height: 100px;
     width: 100px;
@@ -116,6 +117,12 @@ h1 {
     color: white;
     text-align: center;
 }
+
+.credentials_grid p {
+    font-size: .5em;
+    font-style: italic;
+}
+
 
 /*skills*/
 
@@ -135,6 +142,7 @@ h1 {
                  3px 3px black,
                  4px 4px black;
   }
+
 
 /*footer*/
 
@@ -240,14 +248,15 @@ footer p {
     }
     .credentials_grid {
         grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        padding-bottom: 5%;
     }
 
-    .aplus img, .aws img, .google img, .boston img {
+    .lifecoach img, .aplus img, .aws img, .google img, .boston img {
         width: 50px;
         height: 50px;
     }
 
-    .aplus, .aws, .google, .boston {
+    .lifecoach, .aplus, .aws, .google, .boston {
         width: 50px;
         height: 50px;
     }

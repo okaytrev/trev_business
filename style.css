@@ -235,6 +235,10 @@ form {
    border: 2px white solid;
 }
 
+#loading {
+    visibility: hidden;
+}
+
 /*Footer*/
 
 footer a {

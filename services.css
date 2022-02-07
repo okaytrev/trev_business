@@ -137,6 +137,9 @@ form {
    border: 2px white solid;
 }
 
+#loading {
+    visibility: hidden;
+}
 /*footer*/
 
 .menu_footer {

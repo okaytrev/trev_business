@@ -57,7 +57,7 @@
     var data = formData.data;
     var loading = document.getElementById("loading");
     var button = document.getElementById("form_button")
-    button.disabled = "true";
+    button.disabled = true;
     loading.style.visibility = 'visible';
 
     
@@ -67,7 +67,6 @@
       return false;
     }
 
-    disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -84,6 +83,7 @@
           if (thankYouMessage) {
             loading.style.visibility= 'hidden';
             alert("Thank you! We will contact you soon!")
+            button.disabled = false;
           }
         }
     };
@@ -102,13 +102,6 @@
     }
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
-
-  function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].disabled = true;
-    }
-  }
 
 })();
 

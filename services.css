@@ -215,11 +215,13 @@ footer p {
         font-size: .75em;
     }
     
-    .form_box, .form_input {
+    .form_box {
         width: 17em;
     }
 
-    
+    .form_input {
+        width: 13em;
+    }
 }
 
 /*Samsung fold*/

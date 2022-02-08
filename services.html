@@ -76,14 +76,17 @@
                     <br>
                     <label class="form_label" for="message">Message:</label>
                     <br>
-                    <textarea class="form_box" id="message" required rows="4" cols="40" value="Enter your message" onfocus="this.value=''"></textarea>
+                    <textarea name="message" class="form_box" id="message" required rows="4" cols="40" value="Enter your message" onfocus="this.value=''"></textarea>
                     <br>
                     <input id="form_button" class="form_button" type="submit" value="Submit">
                     <img id="loading" src="./media/load.gif" width="15" height="15">
                     </div>
+                    <div style="display:none" class="thankyou_message">
+                    </div>
                 </form>
             </div>
         </div>
+        <script data-cfasync="false" type="text/javascript" src="./form-submission-handler.js"></script>
     </body>
     <footer>
         <!--Footer-->

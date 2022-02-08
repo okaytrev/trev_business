@@ -75,7 +75,7 @@
     <div id="contact" class="form_page">
         <h2>Let's talk!</h2>
         <div class="form_grid"> 
-            <form class="gform" action="https://script.google.com/macros/s/AKfycbyboGBwzvJOQzjDwwQKl9230NE8y7pI70eXfKpwS7xd3xWfLk_e3QaP1jBkNuiyY452/exec" method="post" >
+            <form class="gform" action="https://script.google.com/macros/s/AKfycbzybhkQMIbKBOltiTiWUY94IEFy-OOaPx2zB6_XaECczIsBsg5JXh-nCmhp-QPnwzfm/exec" method="post" >
                 <div class="form_container">
                 <label class="form_label" for="name">Name:</label> 
                 <input class="form_input" type="text" name="name" id="name" value="Enter your name" onfocus="this.value=''" required>
@@ -90,9 +90,9 @@
                 <br>
                 <label class="form_label" for="message">Message:</label>
                 <br>
-                <textarea class="form_box" id="message" required rows="4" cols="40" value="Enter your message" onfocus="this.value=''"></textarea>
+                <textarea name="message" class="form_box" id="message" required rows="4" cols="40" value="Enter your message" onfocus="this.value=''"></textarea>
                 <br>
-                <input class="form_button" type="submit" value="Submit">
+                <input id="form_button" class="form_button" type="submit" value="Submit">
                 <img id="loading" src="./media/load.gif" width="15" height="15">
                 </div>
             </form>

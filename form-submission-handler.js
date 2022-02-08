@@ -55,14 +55,12 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-    var confirmAction = confirm("Are you sure you want to submit?");
     var loading = document.getElementById("loading");
+    var button = document.getElementById("form_button")
+    button.disabled = "true";
+    loading.style.visibility = 'visible';
 
-    if (confirmAction) {
-      loading.style.visibility = 'visible';
-    } else {
-      return false;
-    }
+    
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
@@ -84,8 +82,8 @@
           }
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
-            alert("Thank you for contacting us!")
             loading.style.visibility= 'hidden';
+            alert("Thank you! We will contact you soon!")
           }
         }
     };
@@ -111,5 +109,6 @@
       buttons[i].disabled = true;
     }
   }
+
 })();
 

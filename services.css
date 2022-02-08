@@ -255,4 +255,7 @@ footer p {
         width: 15em;
     }
 
+    ul li {
+        font-size: .85em;
+    }
 }
